@@ -18,11 +18,20 @@ class Productos extends CI_Controller {
 			
 	}
 	public function generadores(){
-		$this->load->view('header');
-		$this->load->view('navbar', $this->data);
-		$this->load->view('generadores', $this->data);
-		$this->load->view('formulario_contacto');
-		$this->load->view('footer', $this->data);
+		if($this->session->language === 'es' || $this->session->language == false){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('generadores', $this->data);
+			$this->load->view('formulario_contacto');
+			$this->load->view('footer', $this->data);
+		}
+		if($this->session->language === 'en'){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('generadores_english', $this->data);
+			$this->load->view('formulario_contacto');
+			$this->load->view('footer', $this->data);
+		}
 	}
 
 	public function obtener_generador_por_id( $id_generador ){

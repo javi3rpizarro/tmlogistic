@@ -762,3 +762,9 @@ input[type=number] {
         font-size: .9rem;
         font-family: 'Roboto Condensed', sans-serif;
     }
+
+    .flag-style{
+        width: 25px !important;
+        height: 25px !important;
+        border-radius: 100% !important;
+    }

@@ -14,37 +14,79 @@ class Home extends CI_Controller {
 	}
 
 	public function index(){
-		$this->load->view('header');
-		$this->load->view('navbar', $this->data);
-		$this->load->view('home');
-		$this->load->view('formulario_contacto');
-		$this->load->view('footer', $this->data);
+		if($this->session->language === 'es' || $this->session->language == false){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('home');
+			$this->load->view('formulario_contacto');
+			$this->load->view('footer', $this->data);
+		}
+		if($this->session->language === 'en'){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('home_english');
+			$this->load->view('formulario_contacto');
+			$this->load->view('footer', $this->data);
+		}
 	}
 	
 	public function empresa(){
-		$this->load->view('header');
-		$this->load->view('navbar', $this->data);
-		$this->load->view('empresa');
-		$this->load->view('footer', $this->data);
+		if($this->session->language === 'es' || $this->session->language == false){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('empresa');
+			$this->load->view('footer', $this->data);
+		}
+		if($this->session->language === 'en'){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('empresa_english');
+			$this->load->view('footer', $this->data);
+		}
 	}
 
 	public function servicios(){
-		$this->load->view('header');
-		$this->load->view('navbar', $this->data);
-		$this->load->view('servicios');
-		$this->load->view('formulario_contacto');
-		$this->load->view('footer', $this->data);
+		if($this->session->language === 'es' || $this->session->language == false){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('servicios');
+			$this->load->view('formulario_contacto');
+			$this->load->view('footer', $this->data);
+		}
+		if($this->session->language === 'en'){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('servicios_english');
+			$this->load->view('formulario_contacto');
+			$this->load->view('footer', $this->data);
+		}
 	}
 	public function proyectos(){
-		$this->load->view('header');
-		$this->load->view('navbar', $this->data);
-		$this->load->view('proyectos');
-		$this->load->view('footer', $this->data);
+		if($this->session->language === 'es' || $this->session->language == false){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('proyectos');
+			$this->load->view('footer', $this->data);
+		}
+		if($this->session->language === 'en'){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('proyectos_english');
+			$this->load->view('footer', $this->data);
+		}
 	}
 	public function clientes(){
-		$this->load->view('header');
-		$this->load->view('navbar', $this->data);
-		$this->load->view('clientes');
-		$this->load->view('footer', $this->data);
+		if($this->session->language === 'es' || $this->session->language == false){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('clientes');
+			$this->load->view('footer', $this->data);
+		}
+		if($this->session->language === 'en'){
+			$this->load->view('header');
+			$this->load->view('navbar', $this->data);
+			$this->load->view('clientes_english');
+			$this->load->view('footer', $this->data);
+		}
 	}
 }

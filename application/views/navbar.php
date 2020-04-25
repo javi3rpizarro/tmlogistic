@@ -53,6 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
 
                 <li><a href="<?=base_url()?>#contactanos-container">Contacto</a></li>
+
                 
                 <?php if( $this->session->logueado ):?>    
                 <li><a href="<?=base_url()?>admin">Administrar</a></li>
@@ -62,6 +63,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="uk-flex-center uk-flex uk-flex-middle">
                     <div class="uk-flex-center uk-flex uk-flex-middle" style="width: 200px; height: auto;">
                         <img src="<?=base_url()?>assets/images/sec4.png">
+                    </div>
+                    <div class="uk-flex-center uk-flex uk-flex-middle">
+                        <a href="<?=base_url()?>language/select/es" style="width: 25px; height: 25px;"><img class="flag-style" src="<?=base_url()?>assets/images/banderas/es_cl.png"></a>
+                        <a href="<?=base_url()?>language/select/en" style="margin-left: 15px; width: 25px; height: 25px;"><img class="flag-style" src="<?=base_url()?>assets/images/banderas/en_us.png"></a>
                     </div>
                 </li>
             </ul>
