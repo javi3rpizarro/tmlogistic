@@ -27,10 +27,10 @@ class Productos extends CI_Controller {
 		}
 		if($this->session->language === 'en'){
 			$this->load->view('header');
-			$this->load->view('navbar', $this->data);
+			$this->load->view('navbar_english', $this->data);
 			$this->load->view('generadores_english', $this->data);
-			$this->load->view('formulario_contacto');
-			$this->load->view('footer', $this->data);
+			$this->load->view('formulario_contacto_english');
+			$this->load->view('footer_english', $this->data);
 		}
 	}
 

@@ -4,9 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
    <!-- INICIO NAVBAR -->
     <div class="uk-topbar uk-flex-center uk-flex-middle" uk-grid>
         <?php foreach($contactos_header as $contacto):?>
-            <?php if( $contacto->contacto != ""):?>    
+            <?php if( $contacto->contact != ""):?>    
             <div class="uk-margin-remove uk-text-center uk-width-1-4@m uk-width-2-6@l">
-                <div><?=$contacto->contacto?></div>
+                <div><?=$contacto->contact?></div>
             </div>
             <?php endif;?>
         <?php endforeach;?>
@@ -23,46 +23,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@l">
-                <li><a href="<?=base_url()?>">Inicio</a></li>
+                <li><a href="<?=base_url()?>">Home</a></li>
                 <li>
-                    <a href="<?=base_url()?>empresa" type="button">Empresa</a>
+                    <a href="<?=base_url()?>empresa" type="button">Company</a>
                     <div class="uk-dropdown-navbar" uk-dropdown="pos: bottom-left; offset: -20; animation: uk-animation-slide-top-small; duration: 400; delay-show: 0; delay-hide: 80;">
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa">¿Quiénes somos?</a></li>
+                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa">About us</a></li>
                             
-                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa#vision-mision">Visión y Misión</a></li>
+                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa#vision-mision">Mission and vision</a></li>
                             
-                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa#nuestros-valores">Nuestros valores</a></li>
+
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a type="button">Servicios</a>
+                    <a type="button">Services</a>
                     <div class="uk-dropdown-navbar" uk-dropdown="pos: bottom-left; offset: -20; animation: uk-animation-slide-top-small; duration: 400; delay-show: 0; delay-hide: 80;">
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>servicios/generadores">Arriendo Generadores</a></li>
+                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>servicios/generadores">Genset Rental Services</a></li>
                             
-                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>servicios">Suministro de repuestos e insumos técnicos</a></li>
+                            <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>servicios">Spare Part and Technical Input Supply</a></li>
                             
                         
                         </ul>
                     </div>
                 </li>
                 
-                <li><a href="<?=base_url()?>clientes">Clientes</a></li>
+                <li><a href="<?=base_url()?>clientes">Customers</a></li>
                 
 
-                <li><a href="<?=base_url()?>#contactanos-container">Contacto</a></li>
+                <li><a href="<?=base_url()?>#contactanos-container">Contact</a></li>
 
                 
                 <?php if( $this->session->logueado ):?>    
-                <li><a href="<?=base_url()?>admin">Administrar</a></li>
+                <li><a href="<?=base_url()?>admin">Administration</a></li>
                 <li><a href="<?=base_url()?>logout">Logout</a></li>
                 <?php endif;?>    
             
                 <li class="uk-flex-center uk-flex uk-flex-middle">
                     <div class="uk-flex-center uk-flex uk-flex-middle" style="width: 200px; height: auto;">
-                        <img src="<?=base_url()?>assets/images/sec4.png">
+                        <img src="<?=base_url()?>assets/images/sec4_english.png">
                     </div>
                     <div class="uk-flex-center uk-flex uk-flex-middle">
                         <a href="<?=base_url()?>language/select/es" style="width: 25px; height: 25px;"><img class="flag-style" src="<?=base_url()?>assets/images/banderas/es_cl.png"></a>
@@ -78,19 +78,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <img class="uk-width-4-5 uk-width-1-2@l" src="<?=base_url()?>assets/images/tmlogo.png"> 
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
                     <ul class="uk-nav">
-                        <li><a href="<?=base_url()?>">Inicio</a></li>
-                        <li><a href="<?=base_url()?>empresa">Empresa</a></li>
-                        <li><a href="<?=base_url()?>servicios">Servicios</a></li>
+                        <li><a href="<?=base_url()?>">Home</a></li>
+                        <li><a href="<?=base_url()?>empresa">Company</a></li>
+                        <li><a href="<?=base_url()?>servicios">Services</a></li>
                         <li><a href="<?=base_url()?>servicios/generadores">Generadores</a></li>
-                            <li><a href="<?=base_url()?>servicios">Suministro de repuestos e insumos técnicos</a></li>
-                            <li><a href="<?=base_url()?>clientes">Nuestros Clientes</a></li>
-                             <li><a href="<?=base_url()?>#contactanos-container">Contacto</a></li>
+                            <li><a href="<?=base_url()?>servicios">Spare Part and Technical Input Supply</a></li>
+                            <li><a href="<?=base_url()?>clientes">Our customers</a></li>
+                             <li><a href="<?=base_url()?>#contactanos-container">Contact</a></li>
                         <?php if( $this->session->logueado ):?>  
-                        <li><a href="<?=base_url()?>admin">Administrar</a></li>  
+                        <li><a href="<?=base_url()?>admin">Administration</a></li>  
                         <li><a href="<?=base_url()?>logout">Logout</a></li>
                         <?php endif;?>
+
                     </ul>
-                     <ul>
+                    <ul>
                         <div class="uk-flex uk-flex-center">
                              <a href="<?=base_url()?>language/select/es" style="width: 25px; height: 25px;"><img class="flag-style" src="<?=base_url()?>assets/images/banderas/es_cl.png"></a>
                         <a href="<?=base_url()?>language/select/en" style="margin-left: 15px; width: 25px; height: 25px;"><img class="flag-style" src="<?=base_url()?>assets/images/banderas/en_us.png"></a>

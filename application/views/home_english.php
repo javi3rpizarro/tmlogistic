@@ -123,7 +123,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="uk-paises-container uk-width-1-1 uk-width-1-2@s uk-width-2-3@m uk-width-2-3@l">
                 <div class="uk-width-1-1 uk-width-2-3@l">
                 
-                <img src="<?=base_url()?>assets/images/home/mapa_2.png">
+                <img src="<?=base_url()?>assets/images/home/mapa_2_english.png">
             </div>
             </div>
             <div class="uk-width-3-5 uk-width-1-2@s uk-width-1-3@m uk-width-1-3@l">
