@@ -9,7 +9,9 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->load->model('contactos_model');
 		$this->data['contactos_header'] = $this->contactos_model->get_header();
+		$this->data['contactos_header_ingles'] = $this->contactos_model->get_header_ingles();
 		$this->data['contactos_footer'] = $this->contactos_model->get_footer();
+		$this->data['contactos_footer_ingles'] = $this->contactos_model->get_footer_ingles();
 			
 	}
 
@@ -22,7 +24,7 @@ class Home extends CI_Controller {
 			$this->load->view('footer', $this->data);
 		}
 		if($this->session->language === 'en'){
-			$this->load->view('header');
+			$this->load->view('header_english');
 			$this->load->view('navbar_english', $this->data);
 			$this->load->view('home_english');
 			$this->load->view('formulario_contacto_english');
@@ -38,7 +40,7 @@ class Home extends CI_Controller {
 			$this->load->view('footer', $this->data);
 		}
 		if($this->session->language === 'en'){
-			$this->load->view('header');
+			$this->load->view('header_english');
 			$this->load->view('navbar_english', $this->data);
 			$this->load->view('empresa_english');
 			$this->load->view('footer_english', $this->data);
@@ -54,7 +56,7 @@ class Home extends CI_Controller {
 			$this->load->view('footer', $this->data);
 		}
 		if($this->session->language === 'en'){
-			$this->load->view('header');
+			$this->load->view('header_english');
 			$this->load->view('navbar_english', $this->data);
 			$this->load->view('servicios_english');
 			$this->load->view('formulario_contacto_english');
@@ -69,7 +71,7 @@ class Home extends CI_Controller {
 			$this->load->view('footer', $this->data);
 		}
 		if($this->session->language === 'en'){
-			$this->load->view('header');
+			$this->load->view('header_english');
 			$this->load->view('navbar_english', $this->data);
 			$this->load->view('proyectos_english');
 			$this->load->view('footer_english', $this->data);
@@ -83,7 +85,7 @@ class Home extends CI_Controller {
 			$this->load->view('footer', $this->data);
 		}
 		if($this->session->language === 'en'){
-			$this->load->view('header');
+			$this->load->view('header_english');
 			$this->load->view('navbar_english', $this->data);
 			$this->load->view('clientes_english');
 			$this->load->view('footer_english', $this->data);

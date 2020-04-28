@@ -9,8 +9,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
         <div class="uk-text-justify uk-margin-left uk-margin-right" uk-grid>
             <div class="uk-width-expand@l uk-padding-remove-horizontal uk-padding-small">
-                Tech-Marine and Logistics is a leading company that offers logistic services, supply of
-maritime technical and genset rental.
+            Tech ‐ Marine and Logistics, a leading company that offers logistics services, technical supply for the
+                         maritime area, and rental of generator sets.
             </div>
         </div>  
     </div>
@@ -30,25 +30,25 @@ maritime technical and genset rental.
                 <ul class="uk-list uk-footer-links">
                     <li><a href="<?=base_url()?>empresa">Company</a></li>
                     <li><a href="<?=base_url()?>servicios">Services</a></li>
-                    <li><a href="<?=base_url()?>clientes">Customers</a></li>
+                    <li><a href="<?=base_url()?>clientes">Our clients</a></li>
                     <li><a href="<?=base_url()?>#contactanos-container">Contact</a></li>
-                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
             <div class="uk-width-expand@l uk-padding-remove">
                 <p style="color: #fff;">CONTACT</p>
                 <div>
                   <!--ul class="uk-list">
-                    <li><i class="material-icons xs white">home</i> Dirección: Av. Gomez Carreño 49, Oficina 102, Valparaiso, Chile</li>
-                    <li><i class="material-icons xs white">phone</i> Teléfono: 56 32 2609600</li>
-                    <li><i class="material-icons xs white">email</i> Abastecimiento y logística: procur@stship.net</li>
+                    <li><i class="material-icons xs white">home</i> Address: Av. Gomez Carreño 49, Oficina 102, Valparaiso, Chile</li>
+                    <li><i class="material-icons xs white">phone</i> Phone: 56 32 2609600</li>
+                    <li><i class="material-icons xs white">email</i> Supply and logistics: procur@stship.net</li>
                   </ul-->
                   <ul class="uk-list">
-                    <?php foreach($contactos_footer as $contacto):?>
-                      <?php if($contacto->contact != ''):?>
+                    <?php foreach($contactos_footer_ingles as $contacto):?>
+                      <?php if($contacto->contacto != ''):?>
                       <li>
                         <i class="material-icons xs white"><?=$contacto->tipo?></i>
-                        <?=$contacto->contact?>
+                        <?=$contacto->contacto?>
                       </li>
                       <?php endif;?>
                     <?php endforeach;?>
@@ -69,7 +69,7 @@ maritime technical and genset rental.
 
 <div class="uk-flex uk-flex-center uk-footer-copy uk-text-center">
     <ul class="uk-list">
-        <li>All rights reserved &copy; Tech-Marine Logistics</li>
+        <li>Derechos Reservados &copy; Tech-Marine Logistics</li>
     </ul>
 </div>
 

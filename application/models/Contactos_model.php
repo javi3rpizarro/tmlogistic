@@ -7,20 +7,46 @@ class Contactos_model extends CI_Model {
 		$header = $this->db->get('header_contacto');
 		return $header->result_object();
 	}
+	public function get_header_ingles(){
+		$header = $this->db->get('header_contacto_ingles');
+		return $header->result_object();
+	}
+
+
 	public function get_footer(){
 		$header = $this->db->get('footer_contacto');
 		return $header->result_object();
 	}
+	public function get_footer_ingles(){
+		$header = $this->db->get('footer_contacto_ingles');
+		return $header->result_object();
+	}
+
+
 	public function update_header($id_hc , $contacto){
 		$this->db->where('id_hc', $id_hc);
 		$this->db->update('header_contacto', $contacto);
 		return;
 	}	
+	public function update_header_ingles($id_hc , $contacto){
+		$this->db->where('id_hc', $id_hc);
+		$this->db->update('header_contacto_ingles', $contacto);
+		return;
+	}	
+
+
 	public function update_footer($id_fc , $contacto){
 		$this->db->where('id_fc', $id_fc);
 		$this->db->update('footer_contacto', $contacto);
 		return;
 	}
+	public function update_footer_ingles($id_fc , $contacto){
+		$this->db->where('id_fc', $id_fc);
+		$this->db->update('footer_contacto_ingles', $contacto);
+		return;
+	}
+
+
 	public function update_email($correo){
 		$this->db->update('ajustes', $correo);
 		return;

@@ -33,5 +33,13 @@ class Contactos extends CI_Controller {
 		}
 		echo "Cambios guardados, recarge la página para visualizar.";
 	}
+	public function editar_contacto_footer_ingles(){
+		$contactos = json_decode($this->input->post('contactos'));
+		foreach ($contactos as $pos => $contacto) {
+			$this->contactos_model->update_footer($contacto->id_fc, array('contacto' => $contacto->contacto, 'tipo' => $contacto->tipo) );
+			
+		}
+		echo "Changes saved, reload the page to view.";
+	}
 	
 }

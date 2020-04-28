@@ -13,13 +13,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="uk-width-expand uk-text-justify">
             
                     <p>
-                        <b>Tech-Marine and Logistics (TML)</b> is a leading company in logistic services, supply of equipment, spare parts and technical supplies for the maritime area, as well as rental of industrial equipment.</p>
+                        <b>Tech‐Marine and Logistics</b>, ) is a leading company in logistic services, supply of equipment, spare parts and technical supplies for the maritime area, as well as rental of industrial equipment.</p>
                     <p>
-                        <i><b>TML operates in Chile and internationally</b> and has highly-skilled professionals with 40+ years of experience in the maritime industry.
+                        <i><b>TML operates in Chile and internationally</b></i> and has highly-skilled professionals with 40+ years of experience in the maritime industry.
                     </p>  
 
                     <p>
-                    In TML, we are committed to meeting the requirements of our customers by rendering a quality service, which is timely and <b> competitive price-wise</b> in every step of the process, both pre- and post-sale of spare parts, machinery rental and rendering of logistic services.  
+                    In TML, we are committed to meeting the requirements of our customers by rendering a quality service, which is timely and <b>competitive price-wise</b> in every step of the process, both pre- and post-sale of spare parts, machinery rental and rendering of logistic services.  
                    </p>
                     <h6>
                         Tech‐Marine and Logistics.
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="uk-flex uk-flex-center" uk-grid>
             <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-4@m uk-width-1-4@l uk-flex uk-flex-center">
             <div class="uk-text-center">
-                <img src="<?=base_url()?>assets/images/empresa/seguridad.png">
+                <img src="<?=base_url()?>assets/images/empresa/security.png">
                 <!--span class="uk-icon lg orange uk-flex uk-flex-center uk-flex-middle">
                     <i class="material-icons lg white">verified_user</i>
                 </span-->
@@ -81,7 +81,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             
             <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-4@m uk-width-1-4@l uk-flex uk-flex-center">
             <div class="uk-text-center">
-                <img src="<?=base_url()?>assets/images/empresa/lealtad.png">
+                <img src="<?=base_url()?>assets/images/empresa/loyalty.png">
                 <!--span class="uk-icon lg orange uk-flex uk-flex-center uk-flex-middle">
                     <i class="material-icons lg white">build</i>
                 </span-->
@@ -91,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             
             <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-4@m uk-width-1-4@l uk-flex uk-flex-center">
             <div class="uk-text-center">
-                <img src="<?=base_url()?>assets/images/empresa/ambiente.png">
+                <img src="<?=base_url()?>assets/images/empresa/environment.png">
                 <!--span class="uk-icon lg orange uk-flex uk-flex-center uk-flex-middle">
                     <i class="material-icons lg white">directions_boat</i>
                 </span-->
@@ -100,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-4@m uk-width-1-4@l uk-flex uk-flex-center">
             <div class="uk-text-center">
-                <img src="<?=base_url()?>assets/images/empresa/servicio.png">
+                <img src="<?=base_url()?>assets/images/empresa/service.png">
                 <!--span class="uk-icon lg orange uk-flex uk-flex-center uk-flex-middle">
                     <i class="material-icons lg white">emoji_transportation</i>
                 </span-->

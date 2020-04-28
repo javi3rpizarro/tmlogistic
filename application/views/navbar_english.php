@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
    <!-- INICIO NAVBAR -->
     <div class="uk-topbar uk-flex-center uk-flex-middle" uk-grid>
-        <?php foreach($contactos_header as $contacto):?>
+        <?php foreach($contactos_header_ingles as $contacto):?>
             <?php if( $contacto->contact != ""):?>    
             <div class="uk-margin-remove uk-text-center uk-width-1-4@m uk-width-2-6@l">
                 <div><?=$contacto->contact?></div>
