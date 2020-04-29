@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="uk-flex uk-flex-center uk-footer-copy uk-text-center">
     <ul class="uk-list">
-        <li>Derechos Reservados &copy; Tech-Marine Logistics</li>
+        <li>All Rights Reserved &copy; Tech-Marine Logistics</li>
     </ul>
 </div>
 

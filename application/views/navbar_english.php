@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             
                             <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa#vision-mision">Mission and vision</a></li>
                             
-
+                             <li class="uk-dropdown-nav-li"><a href="<?=base_url()?>empresa#nuestros-valores">Our values</a></li>
                         </ul>
                     </div>
                 </li>
